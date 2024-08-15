@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtividadeNota</title>
+    <style>
+        table,tr,td{
+            border: 2px solid gray;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Essa página exibe a quantidade de pessoas em cada faixa etária e a maior idade!!!</h2>
+        <hr>
+        <h3>Informe as idades</h2>
+        <label>Pessoa 1</label>
+        <input type="number" name="idade1">
+
+        <label>Pessoa 2</label>
+        <input type="number" name="idade2">
+
+        <label>Pessoa 3</label>
+        <input type="number" name="idade3">
+
+        <label>Pessoa 4</label>
+        <input type="number" name="idade4">
+
+        <label>Pessoa 5</label>
+        <input type="number" name="idade5">
+
+        <br><br>
+
+        <button type="button" onclick="calcularFaixaEtaria(this.form)">Calcular</button>
+    </form>
+
+    <br>
+    <table>
+        <tr>
+            <td>FaixaEtaria</td>
+            <td>Idade</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Até 15 anos</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>De 16 a 40 anos</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Acima de 40 anos</td>
+        </tr>
+    </table>
+
+    <p id="resultado"></p>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
